@@ -1,0 +1,9 @@
+name: my-telegram-bot
+version: 1.0.0
+build:
+  steps:
+    - run: pip install pytelegrambotapi
+run:
+  service: python bot.py
+  ports:
+    - 80:8080
